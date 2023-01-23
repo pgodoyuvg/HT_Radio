@@ -4,5 +4,5 @@ public interface IRadio {
 	void turnOnOff();
 	void changeAmFm();
 	float changeStation(boolean forwardDirection);
-	void storeStation(int position);
+	String storeStation(int position);
 }

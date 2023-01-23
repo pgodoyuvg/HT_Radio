@@ -1,11 +1,11 @@
-package org.pgodoy.radio.test;
+package org.pgodoy.radiotests;
 import static org.junit.Assert.*;
 
 import org.junit.jupiter.api.Test;
 import org.pgodoy.radio.Radio;
 import org.junit.jupiter.api.BeforeEach;
 
-class RadioTurnOnOffTest {
+class TurnOnOff {
 
 	private Radio radio;
 	@BeforeEach
@@ -14,18 +14,18 @@ class RadioTurnOnOffTest {
 	}
 
 	@Test
-	void radioIsOffByDefault() {
+	void radioShouldBeOffByDefault() {
 		assertFalse(radio.isOn());
 	}
 	
 	@Test
-	void radioCanBeTurnedOn() {
+	void radioShouldBeAbleToBeTurnedOn() {
 		radio.turnOnOff();
 		assertTrue(radio.isOn());
 	}
 	
 	@Test
-	void radioCanBeTurnedOff() {
+	void radioShouldBeAbleToBeTurnedOff() {
 		radio.turnOnOff();
 		assertTrue(radio.isOn());
 		radio.turnOnOff();
